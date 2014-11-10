@@ -15,6 +15,9 @@
     "tmpl",
     "compiler"
   ],
+  "devDependencies": {
+    "cheerio": "~0.17.0"
+  },
   "author": "lynsun",
   "license": "BSD-2-Clause",
   "bugs": {

@@ -6,8 +6,8 @@
 
 module.exports = function (grunt) {
     'use strict';
-    var compiler = require('./compiler')
-    var wrap = require('./wrap')
+    var compiler = require('./lib/compiler')
+    var wrap = require('./lib/wrap')
 	var cheerio	= require('cheerio')
 	
     grunt.registerMultiTask('tmplcompiler', 'tmpl compiler', function () {
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 						fileDest = compiler.process(tmpl, options);
 					}catch(e){
 						grunt.log.error('Compiled Error');
-						grunt.log.warn('Source mtpl filepath: "' + filepath + '"');
+						grunt.log.warn('Source tmpl filepath: "' + filepath + '"');
 						grunt.log.warn('Line Number: ' + e.line);
 						grunt.log.warn(e.message);
 						return;
