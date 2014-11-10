@@ -15,6 +15,9 @@
     "tmpl",
     "compiler"
   ],
+  "dependencies":{
+	"cheerio": "~0.17.0"
+  },
   "devDependencies": {
     "cheerio": "~0.17.0"
   },
