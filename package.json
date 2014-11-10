@@ -1,6 +1,6 @@
 {
   "name": "grunt-tmpl-compiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a grunt task to compile tmpl to js",
   "main": "index.js",
   "scripts": {
