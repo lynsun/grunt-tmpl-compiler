@@ -1,7 +1,7 @@
 /**
  * @module compiler
- * @author woodsrong@qq.com
- * @date 2014-07-13
+ * @author sunjianpeng@yy.com
+ * @date 2014-11-09
  */
 
 'use strict';

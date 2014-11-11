@@ -6,8 +6,8 @@
 
 module.exports = function (grunt) {
     'use strict';
-    var compiler = require('./lib/compiler')
-    var wrap = require('./lib/wrap')
+    var compiler = require('./compiler')
+    var wrap = require('./wrap')
 	var cheerio	= require('cheerio')
 	
     grunt.registerMultiTask('tmplcompiler', 'tmpl compiler', function () {
