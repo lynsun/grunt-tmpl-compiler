@@ -84,11 +84,14 @@ module.exports = {
 			}
 
 			//add data scope
-			if (node instanceof uglify.AST_Symbol) {
-				if (!symbolMap[node.name]) {
-					node.name = withExpression + '.' + node.name
+			if(options.addDataScope){
+				if (node instanceof uglify.AST_Symbol) {
+					if (!symbolMap[node.name]) {
+						node.name = withExpression + '.' + node.name
+					}
 				}
 			}
+			
 		});
 
 		var transformedAst = ast.transform(transformer);

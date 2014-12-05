@@ -13,7 +13,8 @@ module.exports = function (grunt) {
     grunt.registerMultiTask('tmplcompiler', 'tmpl compiler', function () {
         var options = this.options({
             wrap: 'default',
-            lineNumber: false
+            lineNumber: false,
+			addDataScope:false
         });
 		
 		
