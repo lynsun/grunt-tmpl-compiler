@@ -68,7 +68,12 @@ module.exports = function (grunt) {
 			dest = options.banner + grunt.util.linefeed + dest;
 		}
 		
-		grunt.file.write(destSrc, dest);
-		grunt.log.writeln('File ' + destSrc + 'created  (' + ( new Date() - beforeCompileTimeStamp ) / 1000 + 's)');
+		if(!destSrc){
+			//dir tmpl exists,but no files
+			grunt.log.writeln('dir tmpl is empty');
+		}else{
+			grunt.file.write(destSrc, dest);
+			grunt.log.writeln('File ' + destSrc + 'created  (' + ( new Date() - beforeCompileTimeStamp ) / 1000 + 's)');
+		}
     });
 };
