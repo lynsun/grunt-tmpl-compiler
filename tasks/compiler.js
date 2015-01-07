@@ -39,7 +39,7 @@ module.exports = {
 		// load the template - and be sure to cache the result.
 		// Generate a reusable function that will serve as a template
 		// generator (and which will be cached).
-		var tmp = "function anonymous(data){data = data||{};data.tmpl = this;var p = ''" + (options.lineNumber && ", line = 0, filepath = '" + options.filepath + "'" || "") + ";" +
+		var tmp = "function anonymous(data){data = data||{};data.tmpl = this;var tmpl=tmpl||this;var p = ''" + (options.lineNumber && ", line = 0, filepath = '" + options.filepath + "'" || "") + ";" +
 			// Convert the template into pure JavaScript
 			this.parse(code, options)
 			+ "return p;}";
